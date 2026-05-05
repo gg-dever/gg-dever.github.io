@@ -151,18 +151,23 @@ body {
     gap: 1rem;
 }
 
-/* Hero Title Section */
-.hero-title-section {
+/* Hero Title Wrapper */
+.hero-title-wrapper {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Hero Text Content */
+.hero-text-content {
+    flex: 1;
 }
 
 /* Profile Circle */
 .profile-circle {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid var(--accent-bright);
