@@ -151,6 +151,30 @@ body {
     gap: 1rem;
 }
 
+/* Profile Circle */
+.profile-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    border: 3px solid var(--accent-bright);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.profile-circle:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(143, 143, 143, 0.4);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
 /* Buttons */
 .btn {
     padding: 0.875rem 2rem;
