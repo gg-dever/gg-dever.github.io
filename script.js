@@ -22,16 +22,36 @@ function showSpecialty(specialty) {
 // Navbar background on scroll
 let lastScroll = 0;
 const navbar = document.querySelector('.navbar');
+const profileCircle = document.querySelector('.profile-circle');
 
 window.addEventListener('scroll', () => {
     const currentScroll = window.pageYOffset;
 
+    // Navbar styling
     if (currentScroll > 100) {
         navbar.style.background = 'rgba(253, 248, 237, 0.98)';
         navbar.style.boxShadow = '0 4px 20px rgba(139, 159, 126, 0.12)';
     } else {
         navbar.style.background = 'rgba(253, 248, 237, 0.95)';
         navbar.style.boxShadow = 'none';
+    }
+
+    // Profile circle fade effect
+    if (profileCircle) {
+        // Start fading after 200px scroll, fully fade by 800px
+        const fadeStart = 200;
+        const fadeEnd = 800;
+        
+        if (currentScroll <= fadeStart) {
+            profileCircle.style.opacity = '0.92';
+        } else if (currentScroll >= fadeEnd) {
+            profileCircle.style.opacity = '0';
+        } else {
+            // Calculate opacity between fadeStart and fadeEnd
+            const fadeProgress = (currentScroll - fadeStart) / (fadeEnd - fadeStart);
+            const opacity = 0.92 * (1 - fadeProgress);
+            profileCircle.style.opacity = opacity.toString();
+        }
     }
 
     lastScroll = currentScroll;

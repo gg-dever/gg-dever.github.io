@@ -140,7 +140,7 @@ body {
 .profile-circle {
     position: fixed;
     left: 2rem;
-    top: 2rem;
+    top: 8rem;
     width: 640px;
     height: 640px;
     border-radius: 50%;
@@ -149,7 +149,7 @@ body {
     box-shadow: 0 16px 64px rgba(139, 159, 126, 0.2);
     z-index: 999;
     opacity: 0.92;
-    transition: all 0.3s ease;
+    transition: opacity 0.5s ease, transform 0.3s ease;
 }
 
 .profile-circle:hover {
