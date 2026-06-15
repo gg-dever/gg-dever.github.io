@@ -115,7 +115,7 @@ body {
     background: var(--gradient-1);
     position: relative;
     overflow: hidden;
-    padding-top: 175px;
+    padding-top: 160px;
     padding-bottom: 5rem;
 }
 
@@ -136,6 +136,7 @@ body {
     position: relative;
     z-index: 1;
     margin-left: 680px;
+    margin-top: 3rem;
     padding-right: 4rem;
     padding-left: 2rem;
     width: calc(100% - 680px);
