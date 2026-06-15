@@ -36,6 +36,12 @@ body {
     padding: 0 2rem;
 }
 
+.hero .container {
+    max-width: none;
+    width: 100%;
+    padding: 0;
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -130,7 +136,10 @@ body {
     position: relative;
     z-index: 1;
     margin-left: 680px;
-    max-width: calc(100% - 700px);
+    padding-right: 4rem;
+    padding-left: 2rem;
+    width: calc(100% - 680px);
+    max-width: none;
 }
 
 .hero-title-section {
@@ -192,7 +201,7 @@ body {
 .hero-description {
     font-size: 1.3rem;
     color: var(--text-muted);
-    max-width: 800px;
+    max-width: none;
     margin-bottom: 3rem;
     line-height: 1.8;
 }
@@ -775,7 +784,8 @@ section {
 @media (max-width: 1400px) {
     .hero-content {
         margin-left: 500px;
-        max-width: calc(100% - 520px);
+        width: calc(100% - 500px);
+        padding-right: 2rem;
     }
 
     .profile-circle {
@@ -807,7 +817,9 @@ section {
 
     .hero-content {
         margin-left: 0;
+        width: 100%;
         max-width: 100%;
+        padding-right: 2rem;
     }
 
     .hero-title {
