@@ -5,21 +5,21 @@
 }
 
 :root {
-    --gradient-1: linear-gradient(135deg, #f8f9f6 0%, #ffffff 100%);
-    --gradient-2: linear-gradient(135deg, #fafbf8 0%, #f5f6f3 100%);
-    --gradient-3: linear-gradient(135deg, #ffffff 0%, #f8f9f6 100%);
-    --gradient-accent: linear-gradient(135deg, #7cb342 0%, #9ccc65 100%);
-    --gradient-card: linear-gradient(135deg, #fafbf8 0%, #ffffff 100%);
-    --gradient-warm: linear-gradient(135deg, #f5f3e8 0%, #fafaf5 100%);
-    --text-primary: #2d3e2a;
-    --text-secondary: #4a5f45;
-    --text-muted: #7a8f75;
-    --accent: #7cb342;
-    --accent-bright: #9ccc65;
-    --accent-warm: #aed581;
-    --accent-gold: #c5e1a5;
-    --border-color: #d4e4cd;
-    --border-warm: #e8f5e0;
+    --gradient-1: linear-gradient(135deg, #f5f1e8 0%, #faf7f0 100%);
+    --gradient-2: linear-gradient(135deg, #f7f3ea 0%, #f2ede3 100%);
+    --gradient-3: linear-gradient(135deg, #faf7f0 0%, #f5f1e8 100%);
+    --gradient-accent: linear-gradient(135deg, #8b9f7e 0%, #a4b894 100%);
+    --gradient-card: linear-gradient(135deg, #f7f3ea 0%, #faf7f0 100%);
+    --gradient-warm: linear-gradient(135deg, #f0ebe0 0%, #f5f1e8 100%);
+    --text-primary: #2d3528;
+    --text-secondary: #5a6552;
+    --text-muted: #7d8a76;
+    --accent: #8b9f7e;
+    --accent-bright: #a4b894;
+    --accent-warm: #b5c9a8;
+    --accent-gold: #c8d9bd;
+    --border-color: #d9d4c8;
+    --border-warm: #e5e0d5;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(250, 247, 240, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -57,7 +57,7 @@ body {
 .nav-brand {
     font-size: 1.25rem;
     font-weight: 600;
-    background: linear-gradient(135deg, #7cb342 0%, #558b2f 100%);
+    background: linear-gradient(135deg, #8b9f7e 0%, #6d7f62 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -120,8 +120,8 @@ body {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(circle at 20% 50%, rgba(156, 204, 101, 0.08) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(124, 179, 66, 0.08) 0%, transparent 50%);
+        radial-gradient(circle at 20% 50%, rgba(164, 184, 148, 0.06) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(139, 159, 126, 0.06) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -139,24 +139,24 @@ body {
 
 .profile-circle {
     position: absolute;
-    left: -80px;
+    left: -140px;
     top: 50%;
     transform: translateY(-50%);
-    width: 180px;
-    height: 180px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
     overflow: hidden;
-    border: 4px solid rgba(156, 204, 101, 0.3);
-    box-shadow: 0 8px 32px rgba(124, 179, 66, 0.2);
+    border: 5px solid rgba(164, 184, 148, 0.35);
+    box-shadow: 0 12px 48px rgba(139, 159, 126, 0.25);
     z-index: 0;
-    opacity: 0.85;
+    opacity: 0.9;
     transition: all 0.3s ease;
 }
 
 .profile-circle:hover {
     opacity: 1;
-    transform: translateY(-50%) scale(1.05);
-    border-color: rgba(156, 204, 101, 0.5);
+    transform: translateY(-50%) scale(1.03);
+    border-color: rgba(164, 184, 148, 0.5);
 }
 
 .profile-circle img {
@@ -169,7 +169,7 @@ body {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    background: linear-gradient(135deg, #558b2f 0%, #7cb342 50%, #9ccc65 100%);
+    background: linear-gradient(135deg, #6d7f62 0%, #8b9f7e 50%, #a4b894 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -212,15 +212,15 @@ body {
 
 .btn-primary {
     background: var(--gradient-accent);
-    color: #ffffff;
+    color: #faf7f0;
     border-color: var(--accent);
 }
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 25px rgba(124, 179, 66, 0.3);
+    box-shadow: 0 10px 25px rgba(139, 159, 126, 0.25);
     border-color: var(--accent-bright);
-    background: linear-gradient(135deg, #689f38 0%, #8bc34a 100%);
+    background: linear-gradient(135deg, #7a9069 0%, #95aa86 100%);
 }
 
 .btn-secondary {
@@ -230,7 +230,7 @@ body {
 }
 
 .btn-secondary:hover {
-    background: rgba(156, 204, 101, 0.1);
+    background: rgba(164, 184, 148, 0.08);
     border-color: var(--accent);
 }
 
@@ -245,7 +245,7 @@ body {
 .btn-outline:hover {
     background: var(--gradient-accent);
     border-color: var(--accent-bright);
-    color: #ffffff;
+    color: #faf7f0;
 }
 
 /* Sections */
@@ -259,7 +259,7 @@ section {
     font-weight: 700;
     margin-bottom: 1rem;
     text-align: center;
-    background: linear-gradient(135deg, #558b2f 0%, #7cb342 100%);
+    background: linear-gradient(135deg, #6d7f62 0%, #8b9f7e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -317,7 +317,7 @@ section {
 .specialty-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent);
-    box-shadow: 0 15px 40px rgba(124, 179, 66, 0.15);
+    box-shadow: 0 15px 40px rgba(139, 159, 126, 0.15);
 }
 
 .specialty-icon {
@@ -431,7 +431,7 @@ section {
     height: 12px;
     background: var(--accent-bright);
     border-radius: 50%;
-    border: 3px solid #ffffff;
+    border: 3px solid #faf7f0;
 }
 
 .timeline-content {
@@ -519,7 +519,7 @@ section {
 .project-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent);
-    box-shadow: 0 15px 40px rgba(124, 179, 66, 0.15);
+    box-shadow: 0 15px 40px rgba(139, 159, 126, 0.15);
 }
 
 .project-header {
@@ -572,7 +572,7 @@ section {
 }
 
 .tag {
-    background: rgba(197, 225, 165, 0.25);
+    background: rgba(181, 201, 168, 0.2);
     border: 1px solid var(--border-color);
     padding: 0.25rem 0.75rem;
     border-radius: 4px;
@@ -829,13 +829,13 @@ html {
 .featured-project-card:hover {
     transform: translateY(-5px);
     border-color: var(--accent-bright);
-    box-shadow: 0 20px 50px rgba(124, 179, 66, 0.15);
+    box-shadow: 0 20px 50px rgba(139, 159, 126, 0.15);
 }
 
 .featured-badge {
     display: inline-block;
     background: var(--gradient-accent);
-    color: #ffffff;
+    color: #faf7f0;
     border: 1px solid var(--accent);
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -873,7 +873,7 @@ html {
 }
 
 .featured-highlights {
-    background: rgba(197, 225, 165, 0.15);
+    background: rgba(181, 201, 168, 0.12);
     border-left: 3px solid var(--accent-bright);
     padding: 1.5rem;
     border-radius: 8px;
@@ -913,5 +913,5 @@ html {
 /* Selection */
 ::selection {
     background: var(--accent-bright);
-    color: #ffffff;
+    color: #faf7f0;
 }
