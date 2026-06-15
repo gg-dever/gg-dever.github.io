@@ -38,9 +38,9 @@ window.addEventListener('scroll', () => {
 
     // Profile circle fade effect
     if (profileCircle) {
-        // Start fading after 200px scroll, fully fade by 800px
-        const fadeStart = 200;
-        const fadeEnd = 800;
+        // Start fading after 400px scroll, fully fade by 1200px
+        const fadeStart = 400;
+        const fadeEnd = 1200;
 
         if (currentScroll <= fadeStart) {
             profileCircle.style.opacity = '0.92';
