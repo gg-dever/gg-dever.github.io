@@ -103,13 +103,14 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 100vh;
+    min-height: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     background: var(--gradient-1);
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
+    padding-top: 120px;
+    padding-bottom: 4rem;
 }
 
 .hero::before {
@@ -128,6 +129,8 @@ body {
 .hero-content {
     position: relative;
     z-index: 1;
+    margin-left: 680px;
+    max-width: calc(100% - 700px);
 }
 
 .hero-title-section {
@@ -135,6 +138,7 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    margin-bottom: 2rem;
 }
 
 .profile-circle {
@@ -165,29 +169,31 @@ body {
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     background: linear-gradient(135deg, #6d7f62 0%, #8b9f7e 50%, #a4b894 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
     z-index: 1;
+    line-height: 1.2;
 }
 
 .hero-subtitle {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: var(--text-secondary);
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     font-weight: 500;
+    line-height: 1.5;
 }
 
 .hero-description {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     color: var(--text-muted);
-    max-width: 700px;
-    margin-bottom: 2.5rem;
+    max-width: 800px;
+    margin-bottom: 3rem;
     line-height: 1.8;
 }
 
@@ -766,9 +772,42 @@ section {
 }
 
 /* Responsive */
+@media (max-width: 1400px) {
+    .hero-content {
+        margin-left: 500px;
+        max-width: calc(100% - 520px);
+    }
+
+    .profile-circle {
+        width: 450px;
+        height: 450px;
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        font-size: 1.2rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
+    }
+
+    .hero {
+        padding-top: 80px;
+    }
+
+    .hero-content {
+        margin-left: 0;
+        max-width: 100%;
     }
 
     .hero-title {
@@ -777,6 +816,10 @@ section {
 
     .hero-subtitle {
         font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
     }
 
     .hero-cta {
