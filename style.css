@@ -51,7 +51,7 @@ body {
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 .navbar .container {
@@ -61,7 +61,7 @@ body {
 }
 
 .nav-brand {
-    font-size: 2.5rem;
+    font-size: 1.875rem;
     font-weight: 600;
     background: linear-gradient(135deg, #8b9f7e 0%, #6d7f62 100%);
     -webkit-background-clip: text;
@@ -71,13 +71,13 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 1.9rem;
+    font-size: 1.425rem;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -115,7 +115,7 @@ body {
     background: var(--gradient-1);
     position: relative;
     overflow: hidden;
-    padding-top: 200px;
+    padding-top: 180px;
     padding-bottom: 5rem;
 }
 
@@ -154,7 +154,7 @@ body {
 .profile-circle {
     position: fixed;
     left: 2rem;
-    top: 10rem;
+    top: 9rem;
     width: 640px;
     height: 640px;
     border-radius: 50%;
@@ -840,10 +840,7 @@ section {
     }
 
     .profile-circle {
-        width: 200px;
-        height: 200px;
-        left: 1rem;
-        top: 1rem;
+        display: none;
     }
 
     .specialty-cards,
