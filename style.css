@@ -5,21 +5,21 @@
 }
 
 :root {
-    --gradient-1: linear-gradient(135deg, #f5f1e8 0%, #faf7f0 100%);
-    --gradient-2: linear-gradient(135deg, #f7f3ea 0%, #f2ede3 100%);
-    --gradient-3: linear-gradient(135deg, #faf7f0 0%, #f5f1e8 100%);
+    --gradient-1: linear-gradient(135deg, #f7f0e0 0%, #fdf8ed 100%);
+    --gradient-2: linear-gradient(135deg, #f9f2e2 0%, #f4ebe0 100%);
+    --gradient-3: linear-gradient(135deg, #fdf8ed 0%, #f7f0e0 100%);
     --gradient-accent: linear-gradient(135deg, #8b9f7e 0%, #a4b894 100%);
-    --gradient-card: linear-gradient(135deg, #f7f3ea 0%, #faf7f0 100%);
-    --gradient-warm: linear-gradient(135deg, #f0ebe0 0%, #f5f1e8 100%);
-    --text-primary: #2d3528;
-    --text-secondary: #5a6552;
-    --text-muted: #7d8a76;
+    --gradient-card: linear-gradient(135deg, #f9f2e2 0%, #fdf8ed 100%);
+    --gradient-warm: linear-gradient(135deg, #f2e9d5 0%, #f7f0e0 100%);
+    --text-primary: #3a3426;
+    --text-secondary: #5d5745;
+    --text-muted: #8a856e;
     --accent: #8b9f7e;
     --accent-bright: #a4b894;
     --accent-warm: #b5c9a8;
     --accent-gold: #c8d9bd;
-    --border-color: #d9d4c8;
-    --border-warm: #e5e0d5;
+    --border-color: #ddd3bf;
+    --border-warm: #e8dfca;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(250, 247, 240, 0.95);
+    background: rgba(253, 248, 237, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
     z-index: 1000;
@@ -138,25 +138,24 @@ body {
 }
 
 .profile-circle {
-    position: absolute;
-    left: -140px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
-    height: 320px;
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+    width: 640px;
+    height: 640px;
     border-radius: 50%;
     overflow: hidden;
-    border: 5px solid rgba(164, 184, 148, 0.35);
-    box-shadow: 0 12px 48px rgba(139, 159, 126, 0.25);
-    z-index: 0;
-    opacity: 0.9;
+    border: 6px solid rgba(164, 184, 148, 0.3);
+    box-shadow: 0 16px 64px rgba(139, 159, 126, 0.2);
+    z-index: 999;
+    opacity: 0.92;
     transition: all 0.3s ease;
 }
 
 .profile-circle:hover {
     opacity: 1;
-    transform: translateY(-50%) scale(1.03);
-    border-color: rgba(164, 184, 148, 0.5);
+    transform: scale(1.02);
+    border-color: rgba(164, 184, 148, 0.45);
 }
 
 .profile-circle img {
@@ -212,7 +211,7 @@ body {
 
 .btn-primary {
     background: var(--gradient-accent);
-    color: #faf7f0;
+    color: #fdf8ed;
     border-color: var(--accent);
 }
 
@@ -245,7 +244,7 @@ body {
 .btn-outline:hover {
     background: var(--gradient-accent);
     border-color: var(--accent-bright);
-    color: #faf7f0;
+    color: #fdf8ed;
 }
 
 /* Sections */
@@ -431,7 +430,7 @@ section {
     height: 12px;
     background: var(--accent-bright);
     border-radius: 50%;
-    border: 3px solid #faf7f0;
+    border: 3px solid #fdf8ed;
 }
 
 .timeline-content {
@@ -785,7 +784,10 @@ section {
     }
 
     .profile-circle {
-        display: none;
+        width: 200px;
+        height: 200px;
+        left: 1rem;
+        top: 1rem;
     }
 
     .specialty-cards,
@@ -835,7 +837,7 @@ html {
 .featured-badge {
     display: inline-block;
     background: var(--gradient-accent);
-    color: #faf7f0;
+    color: #fdf8ed;
     border: 1px solid var(--accent);
     padding: 0.5rem 1rem;
     border-radius: 6px;
@@ -913,5 +915,5 @@ html {
 /* Selection */
 ::selection {
     background: var(--accent-bright);
-    color: #faf7f0;
+    color: #fdf8ed;
 }
