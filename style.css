@@ -46,6 +46,7 @@ body {
 .navbar {
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
     background: rgba(253, 248, 237, 0.95);
     backdrop-filter: blur(10px);
@@ -61,7 +62,7 @@ body {
 }
 
 .nav-brand {
-    font-size: 1.875rem;
+    font-size: 1.25rem;
     font-weight: 600;
     background: linear-gradient(135deg, #8b9f7e 0%, #6d7f62 100%);
     -webkit-background-clip: text;
